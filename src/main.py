@@ -11,7 +11,7 @@ chromeOptions = webdriver.ChromeOptions()
 chromeOptions.add_argument("--headless")
 # chromeOptions.add_argument("--remote-debugging-port=9222")
 chromeOptions.add_argument('--no-sandbox')
-browser = webdriver.Chrome(executable_path='C:/Users/TinaQian/Documents/install/chromedriver.exe',options=chromeOptions)
+browser = webdriver.Chrome(executable_path='chromedriver.exe',options=chromeOptions)
 browser.get(url)
 nav = browser.find_element_by_id("nav-history")
 table=nav.text
